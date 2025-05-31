@@ -1,0 +1,68 @@
+/* reset.css */
+
+/* 1. Elimina márgenes, paddings y bordes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Mejora la tipografía por defecto */
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* 3. Elimina estilos de listas */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* 4. Quita estilos de enlaces */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 5. Normaliza imágenes */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* 6. Elimina bordes en formularios */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* 7. Mejora el comportamiento de los botones */
+  button {
+    cursor: pointer;
+    background: none;
+  }
+  
+  /* 8. Ajustes para HTML5 */
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  main {
+    display: block;
+  }
+  

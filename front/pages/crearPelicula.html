@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="reset.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="icon"  href="/assets/img/logo.png">
+        <script src="https://kit.fontawesome.com/f0b95b219b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <title>Crear mi película</title>
+</head>
+<body>
+<div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+</div>
+<main>
+<header>
+        <a href="../index.html">
+        <img src="/assets/img/logo.png" alt="logo" width="150px">
+        </a>
+        <nav>
+        <div class="links">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></i>Home</a>
+        <a href="/pages/historiaDelCine.html"><i class="fa-solid fa-book"></i>Historia del cine</a>
+        <a href="/pages/sobreNosotros.html"><i class="fa-solid fa-circle-user"></i>Sobre nosotros</a>
+        <a href="/pages/crearPelicula.html"><i class="fa-solid fa-pen-to-square"></i>Crear mi película</a>
+        </div>
+        </nav>
+</header>
+<h1 class="crear-peli">Crear mi Pelicula</h1>
+<div class="container-form">
+<form id="movieForm">
+        <label for="titulo">Titulo</label>
+        <input type="text" id="titulo" name="titulo">
+
+        <label for="año">Año</label>
+        <input type="number" id="año" name="año">
+
+        <label for="director">Director</label>
+        <input type="text" id="director" name="director">
+
+        <label for="duracion">Duracion</label>
+        <input type="text" id="duracion" name="duracion">
+
+        <label>Genero</label>
+        <div class="generos-container">
+        <label><input type="checkbox" value="Action">Action</label>
+        <label><input type="checkbox" value="Adventure">Adventure</label>
+        <label><input type="checkbox" value="Comedy">Comedy</label>
+        <label><input type="checkbox" value="Drama">Drama</label>
+        <label><input type="checkbox" value="Fantasy">Fantasy</label>
+        <label><input type="checkbox" value="Horror">Horror</label>
+        <label><input type="checkbox" value="Mystery">Mystery</label>
+        <label><input type="checkbox" value="Thriller">Thriller</label>
+        <label><input type="checkbox" value="Sci-Fi">Sci-Fi</label>
+        </div>
+
+        <label for="rating">Rating</label>
+        <input type="text" id="rating" name="rating">
+
+        <label for="poster">Poster</label>
+        <input type="text" id="poster" name="poster">
+</form>
+<button id="button" type="submit">Enviar</button>
+<button id="reset" type="button">Limpiar</button>
+</div>
+</main>
+<footer>
+<p>&copy; 2025 App de películas. All rights reserved.</p>
+</footer>
+<script src="../public/bundle.js" defer></script>
+</body>
+</html>
